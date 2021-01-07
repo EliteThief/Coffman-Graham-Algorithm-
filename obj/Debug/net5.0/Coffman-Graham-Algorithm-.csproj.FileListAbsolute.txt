@@ -1,0 +1,16 @@
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\bin\Debug\net5.0\Coffman-Graham-Algorithm-.exe
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\bin\Debug\net5.0\Coffman-Graham-Algorithm-.deps.json
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\bin\Debug\net5.0\Coffman-Graham-Algorithm-.runtimeconfig.json
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\bin\Debug\net5.0\Coffman-Graham-Algorithm-.runtimeconfig.dev.json
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\bin\Debug\net5.0\Coffman-Graham-Algorithm-.dll
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\bin\Debug\net5.0\ref\Coffman-Graham-Algorithm-.dll
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\bin\Debug\net5.0\Coffman-Graham-Algorithm-.pdb
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\obj\Debug\net5.0\Coffman-Graham-Algorithm-.csprojAssemblyReference.cache
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\obj\Debug\net5.0\Coffman-Graham-Algorithm-.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\obj\Debug\net5.0\Coffman-Graham-Algorithm-.AssemblyInfoInputs.cache
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\obj\Debug\net5.0\Coffman-Graham-Algorithm-.AssemblyInfo.cs
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\obj\Debug\net5.0\Coffman-Graham-Algorithm-.csproj.CoreCompileInputs.cache
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\obj\Debug\net5.0\Coffman-Graham-Algorithm-.dll
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\obj\Debug\net5.0\ref\Coffman-Graham-Algorithm-.dll
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\obj\Debug\net5.0\Coffman-Graham-Algorithm-.pdb
+D:\VisualStudioCode\Coffman-Graham Algorythm\Coffman-Graham-Algorithm-\obj\Debug\net5.0\Coffman-Graham-Algorithm-.genruntimeconfig.cache
