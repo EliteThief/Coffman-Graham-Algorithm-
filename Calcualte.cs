@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace Coffman_Graham_Algorithm_
 {
@@ -28,38 +28,25 @@ namespace Coffman_Graham_Algorithm_
         }
         public void CoffmanGrahamAlgo()
         {
-            Console.WriteLine("1");
             int iterator = 1 ;
             List<Node> startingList = new List<Node>();
             List<Node> A = new List<Node>();
-
-            Console.WriteLine("2");
-
+            ListSorterComparer comparer = new ListSorterComparer();
             startingList = FindSonsWithoutSons();
-
-            Console.WriteLine("3");
-
-            A.AddRange(startingList);
-
-            foreach(Node node in A)
-             {
-                 Console.WriteLine(node.Name);
-             }
-
             foreach(Node node in startingList)
             {
                 GiveIteratorNumber(ref iterator,node);
             }
-             A.AddRange(startingList);
-             A = FindListA(A);
-             
-             foreach(Node node in A)
-             {
-                 Console.WriteLine(node.Name);
-             }
-             
+            A =  A.Union(FindListA(startingList)).ToList();
+            while(A.Any())
+            {
+                A.Sort(comparer);
+                GiveIteratorNumber(ref iterator,A.First());
+                A = A.Union(FindListA(A)).ToList(); 
+                A.Remove(A.First());
+            }
         }
-
+        
         public List<Node> FindSonsWithoutSons()
         {
             List<Node> SonsWithoutSons = new List<Node>();
@@ -91,23 +78,47 @@ namespace Coffman_Graham_Algorithm_
 
         public void GiveIteratorNumber(ref int i,Node node)
         {
-            node.Label = i;
-            i++;
+            if(node.Label==0)
+            {
+                node.IsLabeled = true;
+                node.Label = i;
+                i++;
+            }
+            
         }
         public Boolean CheckAll(Node father,List<Node> listOfSons)
         {
-            Node example = father;
-
-            foreach(Node node in listOfSons)
-            {
-                example.Fathers.Remove(node);
-            }
-
-            if(example.Fathers.Any())
+            if(father.Sons.Any(i => !(i.IsLabeled)))
             {
                 return false;
             }
-            return true;
+            else
+            {
+                foreach(Node son in father.Sons)
+                {
+                    if(son.Label!=0 && !father.S_List.Contains(son.Label))
+                        father.S_List.Add(son.Label);         
+                }
+                return true;
+            }
+        }
+
+        public void PrintAll()
+        {
+            foreach(Node node in _graph)
+            {
+                Console.WriteLine(node.Name +": Label="+node.Label+"     S_List{"+S_List_ToString(node.S_List)+"}");
+            }
+        }
+
+        public string S_List_ToString(List<int> nodes)
+        {
+            string lista = "";
+            foreach(int i in nodes)
+            {
+                lista += " "+i+",";
+            }
+            return lista;
         }
 
     }

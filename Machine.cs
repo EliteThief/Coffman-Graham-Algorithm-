@@ -2,13 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+
 
 namespace Coffman_Graham_Algorithm_
 {
     public class Machine
     {
         private List<Node> taskList;
-        private int isFree ;
+        private bool isFree ;
 
         public Machine()
         {
@@ -21,7 +23,7 @@ namespace Coffman_Graham_Algorithm_
             set{ taskList = value;}
         }
 
-        public int IsFree
+        public bool IsFree
         {
             get { return isFree;}
             set { isFree = value;}
@@ -30,12 +32,18 @@ namespace Coffman_Graham_Algorithm_
         public void AddTask(Node node)
         {
             TaskList.Add(node);
-           // IsFree=node.ErliestEndTime;
         }
 
         public void Print()
         {
-            
+            foreach(Node task in TaskList)
+            {
+                if(task is null)
+                {
+                    break;
+                }
+                Console.Write(task.Name+" ");
+            }
         }
 
     }
